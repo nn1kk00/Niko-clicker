@@ -1,0 +1,88 @@
+@font-face {
+    font-family: "main"; 
+    src: url("../font/main.otf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+  }
+
+html {
+    display: flex;
+    background: url("../img/fone.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.panel {
+    background-color: #000000;
+    border-radius: 80px;
+    min-width: 400px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+}
+.cont {
+    background-color: #e2e2e2;
+    backdrop-filter: blur(10px);
+    min-width: 400px;
+    min-height: 700px;
+    border-radius: 80px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 20px 0;
+}
+.cont:nth-child(1) { left: 20%; }
+.cont:nth-child(2) { left: 50%; }
+.cont:nth-child(3) { left: 80%; }
+
+@media (max-width:1330px) {
+    .cont {
+        position: absolute;
+        width: 90%; 
+        min-width: auto;
+        min-height: 300px; 
+        left: 50% !important;
+        transform: translate(-50%);
+        border-radius: 40px;
+    }
+.cont:nth-child(5) { top: 147%; }
+.cont:nth-child(4) { top: 77%; }
+.cont:nth-child(3) { top: 10%; }
+}
+
+
+button {
+    margin: 5px;
+    background-color: #fff;
+    border-color: #000;
+    border-radius: 90px;
+    border-style: dashed;
+    transition-duration: 450ms;
+}
+
+button:hover {
+    background-color: #e2e2e2;
+    border-style: dotted;
+    transition-duration: 450ms;
+}
+
+.clear {
+    background-color: #ff4949;
+    border-color: #000;
+    border-radius: 90px;
+    border-style: dashed;
+    transition-duration: 450ms;
+}
+
+.clear:hover {
+    background-color: #f00000;
+    border-style: dotted;
+    transition-duration: 450ms;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "main";
+}
